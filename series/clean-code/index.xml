@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Clean Code on Mobile West</title><link>https://example.com/series/clean-code/</link><description>Recent content in Clean Code on Mobile West</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 03 Aug 2021 22:05:24 -0300</lastBuildDate><atom:link href="https://example.com/series/clean-code/index.xml" rel="self" type="application/rss+xml"/><item><title>The ugly side of Clean Code Ugly - PT1</title><link>https://example.com/post/clean-code/clean-code-ugly1/</link><pubDate>Tue, 03 Aug 2021 22:05:24 -0300</pubDate><guid>https://example.com/post/clean-code/clean-code-ugly1/</guid><description>
+&lt;div class="top-image">
+&lt;img
+src="https://example.com/images/book_clean_code.jpg"
+alt="Clean Code Book"
+decoding="async"
+style="width:150px;"
+/>
+&lt;/div>
+&lt;p>Estou relendo o famoso livro Clean Code. Afinal de contas, que programador pode se dar ao luxo de não ler?
+E confesso que da primeira vez que li os conceitos fiquei maravilhado. Queria aplicar tudo que lia.
+Mas como programador pragmático que sou, resolvi repensar e reaplicar um pouco desses conceitos na vida real.&lt;/p></description></item></channel></rss>

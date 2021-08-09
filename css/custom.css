@@ -1,0 +1,15 @@
+.top-image {
+    text-align: center;
+}
+
+section#imagesection {
+    margin: auto;
+    padding-top: 10px;
+}
+div#imagesectionleft {
+    float: left;
+    margin-right: 10px;
+}
+div#imagesectionright {
+    margin: auto;
+}
