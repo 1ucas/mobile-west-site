@@ -5,7 +5,7 @@ E confesso que da primeira vez que li os conceitos fiquei maravilhado. Queria ap
 Então separei uma série de artigos com alguns temas deveras controversos e cenários reais que tenho encontrado em minha vida de programador que me fazem pensar o quanto estamos apenas absorvendo roboticamente regras sem realmente parar e pensar realmente nos conceitos por trás.&lt;/p>
 &lt;p>Nesta primeira parte, gostaria de compartilhar com vocês um ponto sobre &amp;quot;Constantes&amp;quot;.&lt;/p>
 &lt;h3 id="magic-numbers-e-textos-fixos">Magic Numbers e Textos Fixos&lt;/h3>
-&lt;p>Após estudar um pouco como sobre Clean Code o mais comum é encontrarmos código do tipo:&lt;/p>
+&lt;p>Após estudar um pouco sobre Clean Code o mais comum é encontrarmos código do tipo:&lt;/p>
 &lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="ln"> 1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;span class="ln"> 2&lt;/span>&lt;span class="kd">private&lt;/span> &lt;span class="kd">enum&lt;/span> &lt;span class="nc">Constants&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;span class="ln"> 3&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">containerViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>
@@ -41,11 +41,11 @@ E também estamos dizendo que o &lt;code>title&lt;/code> da &lt;code>parentConte
 &lt;p>Ou seja, não ganhamos NADA em semântica. Não ganhamos NADA em reuso.&lt;br>
 Então eu te pergunto. Qual o ganho real dessa &amp;quot;regra&amp;quot; do Clean Code em nosso exemplo?&lt;/p>
 &lt;h3 id="desculpas-esfarrapadas">Desculpas esfarrapadas&lt;/h3>
-&lt;p>Vamos começar com as justificativas prontas, porém frias (iguais as coxinhas da cantina de sua faculdade) que qualquer um daria ao ser questionada.&lt;/p>
+&lt;p>Vamos começar com as justificativas prontas, porém frias (iguais as coxinhas da cantina de sua faculdade) que qualquer um daria ao ser questionado.&lt;/p>
 &lt;ol>
 &lt;li>&lt;em>Não podemos deixar Magic Numbers no código, por isso eu abstraí as alturas.&lt;/em>&lt;/li>
 &lt;/ol>
-&lt;p>Por que não, oh corno? Que regra de negócio pode mudar o tamanho da View, quando &amp;quot;tamanho de View&amp;quot; pode mudar o sentido para qualquer outra coisa? Sem falar de Clean Code, justifique.&lt;/p>
+&lt;p>Por que não? Que regra de negócio pode mudar o tamanho da View, quando &amp;quot;tamanho de View&amp;quot; pode mudar o sentido para qualquer outra coisa? Sem falar de Clean Code, justifique.&lt;/p>
 &lt;ol start="2">
 &lt;li>&lt;em>Mas e se o tamanho da View mudar, eu vou ter que ficar caçando a variável no código?&lt;/em>&lt;/li>
 &lt;/ol>
