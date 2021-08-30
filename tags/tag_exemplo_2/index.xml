@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tag_Exemplo_2 on Mobile West</title><link>https://www.mobilewest.com.br/tags/tag_exemplo_2/</link><description>Recent content in Tag_Exemplo_2 on Mobile West</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Mon, 30 Aug 2021 00:16:38 -0300</lastBuildDate><atom:link href="https://www.mobilewest.com.br/tags/tag_exemplo_2/index.xml" rel="self" type="application/rss+xml"/><item><title>Post Exemplo - Domos</title><link>https://www.mobilewest.com.br/post/examples/exemplo-domos/</link><pubDate>Mon, 30 Aug 2021 00:16:38 -0300</pubDate><guid>https://www.mobilewest.com.br/post/examples/exemplo-domos/</guid><description>
+&lt;p>&lt;strong>Não confie nos livros de programação. Você irá se arrepender.&lt;/strong>&lt;/p>
+&lt;p>Texto normal com possível&lt;br>
+Quebra de linha&lt;/p>
+&lt;p>Exemplo de citação de um texto no Twitter (será usado bastante esse recurso)
+&lt;style type="text/css">
+.twitter-tweet {
+font: 14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+border-left: 4px solid #2b7bb9;
+padding-left: 1.5em;
+color: #555;
+}
+.twitter-tweet a {
+color: #2b7bb9;
+text-decoration: none;
+}
+blockquote.twitter-tweet a:hover,
+blockquote.twitter-tweet a:focus {
+text-decoration: underline;
+}
+&lt;/style>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">“In addition to being more logical, asymmetry has the advantage that its complete appearance is far more optically effective than symmetry.”&lt;br>— Jan Tschichold &lt;a href="https://t.co/gcv7SrhvJb">pic.twitter.com/gcv7SrhvJb&lt;/a>&lt;/p>&amp;mdash; Graphic Design History (@DesignReviewed) &lt;a href="https://twitter.com/DesignReviewed/status/1085870671291310081?ref_src=twsrc%5Etfw">January 17, 2019&lt;/a>&lt;/blockquote>
+&lt;/p>
+&lt;p>Obviamente linhas de código:&lt;/p>
+&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="ln"> 1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="ln"> 2&lt;/span>&lt;span class="kd">private&lt;/span> &lt;span class="kd">enum&lt;/span> &lt;span class="nc">Constants&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="ln"> 3&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">containerViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>
+&lt;span class="ln"> 4&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">100.0&lt;/span>
+&lt;span class="ln"> 5&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Potato&amp;#34;&lt;/span>
+&lt;span class="ln"> 6&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Mashed Potatos&amp;#34;&lt;/span>
+&lt;span class="ln"> 7&lt;/span>
+&lt;span class="ln"> 8&lt;/span>
+&lt;span class="ln"> 9&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">70&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="ln">10&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentContentView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="ln">11&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">parentTitle&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="ln">12&lt;/span> &lt;span class="p">.......&lt;/span>
+&lt;span class="ln">13&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="ln">14&lt;/span>
+&lt;span class="ln">15&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;span class="ln">16&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">firstSectionTitle&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="ln">17&lt;/span> &lt;span class="p">.......&lt;/span>
+&lt;span class="ln">18&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;span class="ln">19&lt;/span>
+&lt;span class="ln">20&lt;/span>
+&lt;span class="ln">21&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="ln">22&lt;/span> &lt;span class="kd">func&lt;/span> &lt;span class="nf">setupConstraints&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="ln">23&lt;/span> &lt;span class="n">parentContentView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAnchor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">constraint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalToConstant&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Constants&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">parentViewHeight&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">isActive&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;span class="ln">24&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;span class="ln">25&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>E algumas falas do tipo:&lt;/p>
+&lt;p>&amp;quot;Até que, quando você menos espera, você é atingido por algum Bug que você mesmo deixou para trás e acaba caindo do cavalo.&amp;quot;&lt;/p>
+&lt;p>&lt;img src="https://www.mobilewest.com.br/images/tirocavalo.png" alt="Seu bug te acertando">&lt;/p></description></item></channel></rss>
