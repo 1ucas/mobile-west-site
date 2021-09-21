@@ -13,3 +13,8 @@ div#imagesectionleft {
 div#imagesectionright {
     margin: auto;
 }
+
+.footer img {
+    width: 60px;
+    height: 60px;
+}

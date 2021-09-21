@@ -49,4 +49,18 @@ text-decoration: underline;
 &lt;span class="ln">25&lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>E algumas falas do tipo:&lt;/p>
 &lt;p>&amp;quot;Até que, quando você menos espera, você é atingido por algum Bug que você mesmo deixou para trás e acaba caindo do cavalo.&amp;quot;&lt;/p>
-&lt;p>&lt;img src="https://www.mobilewest.com.br/images/tirocavalo.png" alt="Seu bug te acertando">&lt;/p></description></item></channel></rss>
+&lt;p>&lt;img src="https://www.mobilewest.com.br/images/tirocavalo.png" alt="Seu bug te acertando">&lt;/p>
+&lt;p>O tema já inclui alguns componentes padrões como:&lt;/p>
+&lt;div class="notices note">
+&lt;div class="label">Nota&lt;/div>
+&lt;p>Para mostrar uma anotação no meio do texto.&lt;/p>
+&lt;/div>
+&lt;div class="notices tip">
+&lt;div class="label">Dica&lt;/div>
+&lt;p>Texto da Dica.&lt;/p>
+&lt;/div>
+&lt;div class="notices warning">
+&lt;div class="label">Alerta&lt;/div>
+&lt;p>Texto do Alerta.&lt;/p>
+&lt;/div>
+&lt;p>Pode ser que nem todos fiquem bons no tema escuro e claro.&lt;/p></description></item></channel></rss>
