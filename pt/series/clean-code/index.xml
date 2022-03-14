@@ -6,32 +6,32 @@ Então separei uma série de artigos com alguns temas deveras controversos e cen
 &lt;p>Nesta primeira parte, gostaria de compartilhar com vocês um ponto sobre &amp;quot;Constantes&amp;quot;.&lt;/p>
 &lt;h3 id="magic-numbers-e-textos-fixos">Magic Numbers e Textos Fixos&lt;/h3>
 &lt;p>Após estudar um pouco sobre Clean Code o mais comum é encontrarmos código do tipo:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="ln"> 1&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="ln"> 2&lt;/span>&lt;span class="kd">private&lt;/span> &lt;span class="kd">enum&lt;/span> &lt;span class="nc">Constants&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln"> 3&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">containerViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>
-&lt;span class="ln"> 4&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">100.0&lt;/span>
-&lt;span class="ln"> 5&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Potato&amp;#34;&lt;/span>
-&lt;span class="ln"> 6&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Mashed Potatos&amp;#34;&lt;/span>
-&lt;span class="ln"> 7&lt;/span>
-&lt;span class="ln"> 8&lt;/span>
-&lt;span class="ln"> 9&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">70&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="ln">10&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentContentView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;span class="ln">11&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">parentTitle&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;span class="ln">12&lt;/span> &lt;span class="p">.......&lt;/span>
-&lt;span class="ln">13&lt;/span> &lt;span class="p">)&lt;/span>
-&lt;span class="ln">14&lt;/span>
-&lt;span class="ln">15&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
-&lt;span class="ln">16&lt;/span> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">firstSectionTitle&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;span class="ln">17&lt;/span> &lt;span class="p">.......&lt;/span>
-&lt;span class="ln">18&lt;/span> &lt;span class="p">)&lt;/span>
-&lt;span class="ln">19&lt;/span>
-&lt;span class="ln">20&lt;/span>
-&lt;span class="ln">21&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="ln">22&lt;/span> &lt;span class="kd">func&lt;/span> &lt;span class="nf">setupConstraints&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln">23&lt;/span> &lt;span class="n">parentContentView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAnchor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">constraint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalToConstant&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Constants&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">parentViewHeight&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">isActive&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">true&lt;/span>
-&lt;span class="ln">24&lt;/span> &lt;span class="p">}&lt;/span>
-&lt;span class="ln">25&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>WTH???&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-swift" data-lang="swift">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl">&lt;span class="kd">private&lt;/span> &lt;span class="kd">enum&lt;/span> &lt;span class="nc">Constants&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">containerViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">50.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl"> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentViewHeight&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mf">100.0&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl"> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Potato&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl"> &lt;span class="kd">static&lt;/span> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionTitle&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;Mashed Potatos&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">70&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nv">parentContentView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl"> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">parentTitle&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="p">.......&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl"> &lt;span class="kd">let&lt;/span> &lt;span class="nv">firstSectionView&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="n">CustomView&lt;/span>&lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl"> &lt;span class="n">title&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">firstSectionTitle&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">17&lt;/span>&lt;span class="cl"> &lt;span class="p">.......&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">18&lt;/span>&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">19&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">20&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">21&lt;/span>&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="n">linha&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">22&lt;/span>&lt;span class="cl"> &lt;span class="kd">func&lt;/span> &lt;span class="nf">setupConstraints&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">23&lt;/span>&lt;span class="cl"> &lt;span class="n">parentContentView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAnchor&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">constraint&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">equalToConstant&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">Constants&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">parentViewHeight&lt;/span>&lt;span class="p">).&lt;/span>&lt;span class="n">isActive&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">true&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">24&lt;/span>&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">25&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>WTH???&lt;br>
 Pensem como o pobre coitado que vai fazer a revisão de código.&lt;br>
 Você começa lendo algumas variáveis fixas no código, que não fazem sentido algum neste momento, depois vai lendo outras parte do código....&lt;br>
 E quando você menos espera, 80 linhas abaixo, você encontra o uso de uma dessas variáveis. Em nenhum outro lugar faz sentido essa variávei existir, ser manipulada ou qualquer outra coisa.&lt;/p>
@@ -61,23 +61,23 @@ Não existe livro de programação algum, em inglês ou português que consegue 
 &lt;p>Vamos ser simples e diretos. Claro que presta!&lt;br>
 É um regra super útil...... SE usada conforme o princípio esperado.&lt;/p>
 &lt;p>Voltando aos exemplos:&lt;/p>
-&lt;div class="highlight">&lt;pre class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="ln"> 1&lt;/span>&lt;span class="k">object&lt;/span> &lt;span class="nc">ErrorConfiguration&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln"> 2&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">MaxRetries&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">3&lt;/span>
-&lt;span class="ln"> 3&lt;/span> &lt;span class="k">val&lt;/span> &lt;span class="py">LastRetryMessage&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Last Message&amp;#34;&lt;/span>
-&lt;span class="ln"> 4&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;span class="ln"> 5&lt;/span>
-&lt;span class="ln"> 6&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">....&lt;/span> &lt;span class="n">em&lt;/span> &lt;span class="n">outro&lt;/span> &lt;span class="n">lugar&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="ln"> 7&lt;/span>
-&lt;span class="ln"> 8&lt;/span>&lt;span class="k">fun&lt;/span> &lt;span class="nf">tryAgain&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln"> 9&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">currentRetry&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="n">ErrorConfiguration&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">MaxRetries&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln">10&lt;/span> &lt;span class="c1">// (executa de novo)
-&lt;/span>&lt;span class="ln">11&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">currentRetry&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">ErrorConfiguration&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">MaxRetries&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln">12&lt;/span> &lt;span class="c1">// (executa de novo e muda a frase do erro)
-&lt;/span>&lt;span class="ln">13&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="ln">14&lt;/span> &lt;span class="c1">// (esconde o botão)
-&lt;/span>&lt;span class="ln">15&lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
-&lt;span class="ln">16&lt;/span>&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Quando pensamos em variáveis dessa natureza fica óbvio que uma organização de constantes faz sentido.&lt;br>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-kotlin" data-lang="kotlin">&lt;span class="line">&lt;span class="ln"> 1&lt;/span>&lt;span class="cl">&lt;span class="k">object&lt;/span> &lt;span class="nc">ErrorConfiguration&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 2&lt;/span>&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">MaxRetries&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="m">3&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 3&lt;/span>&lt;span class="cl"> &lt;span class="k">val&lt;/span> &lt;span class="py">LastRetryMessage&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s2">&amp;#34;Last Message&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 4&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 5&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 6&lt;/span>&lt;span class="cl">&lt;span class="p">(&lt;/span>&lt;span class="o">....&lt;/span> &lt;span class="n">em&lt;/span> &lt;span class="n">outro&lt;/span> &lt;span class="n">lugar&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 7&lt;/span>&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 8&lt;/span>&lt;span class="cl">&lt;span class="k">fun&lt;/span> &lt;span class="nf">tryAgain&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln"> 9&lt;/span>&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">currentRetry&lt;/span> &lt;span class="p">&amp;lt;&lt;/span> &lt;span class="n">ErrorConfiguration&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">MaxRetries&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">10&lt;/span>&lt;span class="cl"> &lt;span class="c1">// (executa de novo)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">11&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">currentRetry&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="n">ErrorConfiguration&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">MaxRetries&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">12&lt;/span>&lt;span class="cl"> &lt;span class="c1">// (executa de novo e muda a frase do erro)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">13&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">14&lt;/span>&lt;span class="cl"> &lt;span class="c1">// (esconde o botão)
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">15&lt;/span>&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="ln">16&lt;/span>&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Quando pensamos em variáveis dessa natureza fica óbvio que uma organização de constantes faz sentido.&lt;br>
 Nesse contexto estamos dando sentido a aquela variável.&lt;/p>
 &lt;p>Quem está lendo a função não precisa parar e se perguntar o motivo do número 3, o sentido está no próprio nome.&lt;br>
 Assim o código fica muito mais legível.
