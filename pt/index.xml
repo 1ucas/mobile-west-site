@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile West</title><link>https://www.mobilewest.com.br/pt/</link><description>Recent content on Mobile West</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Tue, 03 Aug 2021 22:05:24 -0300</lastBuildDate><atom:link href="https://www.mobilewest.com.br/pt/index.xml" rel="self" type="application/rss+xml"/><item><title>O perigo do Clean Code - PT1</title><link>https://www.mobilewest.com.br/pt/post/clean-code/clean-code-ugly1/</link><pubDate>Tue, 03 Aug 2021 22:05:24 -0300</pubDate><guid>https://www.mobilewest.com.br/pt/post/clean-code/clean-code-ugly1/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mobile West</title><link>https://www.mobilewest.com.br/pt/</link><description>Recent content on Mobile West</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright><lastBuildDate>Thu, 24 Mar 2022 15:49:45 -0300</lastBuildDate><atom:link href="https://www.mobilewest.com.br/pt/index.xml" rel="self" type="application/rss+xml"/><item><title>Guia de Estudos - Mobile 2022</title><link>https://www.mobilewest.com.br/pt/post/career/mobile-study-guide-2022/</link><pubDate>Thu, 24 Mar 2022 15:49:45 -0300</pubDate><guid>https://www.mobilewest.com.br/pt/post/career/mobile-study-guide-2022/</guid><description>
+&lt;h2 id="crie-rotina">Crie Rotina&lt;/h2>
+&lt;p>Muitas pessoas me perguntam: &amp;quot;Lucas, o que você me recomenda estudar para melhorar minhas habilidades?&lt;/p>
+&lt;p>A minha primeira resposta normalmente também é uma pergunta:&lt;/p>
+&lt;blockquote>
+&lt;p>O que você gosta de estudar?&lt;/p>
+&lt;/blockquote>
+&lt;p>Mais importante do que estudar um assunto específico devemos focar na cadência do aprendizado. &lt;br>
+Manter a cadência nos estudos é o que vai aumentar o seu nível de maturidade em programação, independente da linguagem ou framework. Mas por que isso? &lt;br>
+Porque cadência envolve persistência. Envolve errar, envolve não conseguir prosseguir. Mas também envolve superação e aprendizado real.&lt;/p>
+&lt;p>Quando não se tem persistência em algo, o ganho é muito superficial. &lt;br>
+E se estudar já é um hábito que demanda esforço, estudar algo que você não tem interesse demanda um esforço muito maior.&lt;/p>
+&lt;p>Além disso, como já diria o Gato de Cheshire no clássico &amp;quot;Alice no País das Maravilhas&amp;quot;:&lt;/p>
+&lt;p>&lt;img src="https://www.mobilewest.com.br/images/nao-sabe-onde-ir-pt.png" alt="Gato de Cheshire">&lt;/p>
+&lt;p>Então se você não tem um plano de estudos, segue aqui o meu primeiro conselho de amigo:&lt;/p>
+&lt;blockquote>
+&lt;p>Esqueça o plano. Crie uma rotina de estudos!&lt;/p>
+&lt;/blockquote>
+&lt;p>Não pense demais. Apenas estude.&lt;/p>
+&lt;p>Leia artigos, blogs ou procure o Twitter de outros desenvolvedores Senior. Seja o que for. &lt;br>
+Criar esse hábito será o maior benefício para seu crescimento profissional.&lt;/p>
+&lt;p>Mas se você já tem uma rotina de estudos e gostaria de ajuda para organizá-la ou priorizar temas mais relevantes, vem que eu te ajudo.&lt;/p>
+&lt;h2 id="guia-de-estudos-2022">Guia de Estudos 2022&lt;/h2>
+&lt;p>Aqui vai um pequeno adendo, os assuntos a seguir tem um viés de complexidade um pouco maior. Então caso você esteja aprendendo agora alguma das Stacks, eu recomendo solidificar a sua base para depois buscar conhecimentos específicos.&lt;/p>
+&lt;h3 id="programação-assíncrona">Programação Assíncrona&lt;/h3>
+&lt;p>Talvez um dos tópicos mais complexos da programação seja justamente programação assíncrona. &lt;br>
+A quantidade de caminhos que o código pode tomar se torna infinitamente maior quando não conseguimos predizer quando uma função irá retornar algum valor ou quando um estado será alterado na tela. &lt;br>
+Mas apesar de ser um tema complexo, muita coisa mudou com o passar do tempo.
+E hoje temos várias estruturas auxiliares que nos ajudam com essa tarefa.&lt;/p>
+&lt;p>Em Android, se você ainda não começou os estudos de Coroutines, lembre-se que este é o padrão mais utilizados em novos projetos. Inclusive, nos exemplos de documentações Android, o foco em Coroutines predominante. &lt;br>
+Lembro também que AsyncTask se tornou &lt;code>deprecated&lt;/code> na API 31 do Android, então o recomendado é começar a avaliar a migração desse código o quanto antes.&lt;/p>
+&lt;p>Já em iOS, a introdução de conceitos como &lt;code>Actors&lt;/code> e &lt;code>Tasks&lt;/code> mudou completamente a forma como interagíamos com código assíncrono. Saem de cena as famosas &lt;code>completionHandlers&lt;/code> para entrarem as novas &lt;code>keywords&lt;/code>, &lt;code>async&lt;/code> e &lt;code>await&lt;/code>.
+E essa mudança é muito mais profunda do que parece. Inclusive o próprio conceito de &lt;code>Thread&lt;/code> é redefinido quando passamos a olhar para a forma que as &lt;code>Tasks&lt;/code> interagem entre si. &lt;br>
+Sugestão de leitura: &lt;a href="https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html">Concurrency&lt;/a>&lt;/p>
+&lt;h3 id="interfaces-declarativas">Interfaces Declarativas&lt;/h3>
+&lt;p>Não há dúvidas, interfaces declarativas tem sido um Hot Topic desse ano. &lt;br>
+Tanto o Jetpack Compose no Android quanto o SwiftUI no iOS vieram para ficar. &lt;br>
+Nem tudo são flores (mas quando isso é verdade?). Ambas bibliotecas precisam de um maior polimento e correção de bugs. &lt;br>
+Mas não se deixe influenciar pelo desespero e pessimismo de alguns desenvolvedores da comunidade. Afinal de contas, por serem novas abordagens e novas implementações, estamos todos aprendendo.&lt;/p>
+&lt;p>&lt;em>Ponto de atenção:&lt;/em> em ambos os casos a mudança na construção de interfaces não é apenas uma mudança de framework. O paradigma de se escrever interfaces declarativas é &lt;strong>totalmente&lt;/strong> diferente do que estamos acostumados. &lt;br>
+Navegações, exibição de alertas, referência de Views internas... Nada disso é igual!! Começar a usar esses novos frameworks é uma verdadeira lição de humildade, onde aprende-se tudo (quase) do zero.&lt;/p>
+&lt;h3 id="modularização">Modularização&lt;/h3>
+&lt;p>Como falar de um guia de estudos sem falar de modularização? Praticamente em todos eventos que vamos tem uma &amp;quot;Talk&amp;quot; sobre modularização de aplicativos.&lt;/p>
+&lt;p>Mas por que isso é tão importante? Por dois simples motivos, reduzir a carga mental de cada time e habilitar entregas mais rápidas de forma independente entre as equipes.&lt;/p>
+&lt;p>Contudo, modularização tem seus riscos. Simplesmente começar a criar subprojetos e referenciá-los dentro de um projeto principal não é o suficiente para garantir o crescimento saudável dos módulos de sua aplicação. &lt;br>
+É preciso estudar como quebrar os domínios e features de seu App, de forma que os times tenham plena autonomia nos módulos e funcionalidades em que estão trabalhando.&lt;/p>
+&lt;p>Esse não é um trabalho só de engenharia, mas também de processo e pessoas. &lt;br>
+É necessário se planejar para reduzir a sobreposição e duplicação de funcionalidades. &lt;br>
+É necessário criar os canais de comunicação corretos entre as pessoas. &lt;br>
+É necessário orquestrar a entrega de todos os times, pensando que somente um pacote final irá ser entregue ao cliente.&lt;/p>
+&lt;p>Para isso, tanto o processo quanto a gestão de pessoas de sua empresa devem se preparar para absorver as demandas e tarefas que esses desafios impõe.&lt;/p>
+&lt;h3 id="vrar">VR/AR&lt;/h3>
+&lt;p>Facebook (agora Meta), Apple, Google e Microsoft. Já ouviu falar dessas empresas?&lt;/p>
+&lt;p>Apesar de ainda ser algo pouco presente em nosso cotidiano, todas elas estão ativamente trabalhando em tecnologias e produtos voltados para o mercado de Realidade Aumentada e Realidade Virtual.&lt;/p>
+&lt;p>Esse assunto é onde o futuro realmente está. &lt;br>
+Então se você já está confortável com seu nível de conhecimento atual e quer se preparar para o futuro, invista seu tempo em VR/AR.&lt;/p>
+&lt;h3 id="bonus-server-driven-ui">Bonus: Server-Driven UI&lt;/h3>
+&lt;p>Como trazer valor para o negócio, com o menor custo possível? Essa é pergunta de milhão de dólares (ou mais). &lt;br>
+Server-Driven UI é um forma de se pensar e estruturar a sua aplicação para que ela responda dinamicamente à resposta do servidor.&lt;/p>
+&lt;p>Mas isso não é a mesma coisa que BFF? Não.&lt;/p>
+&lt;p>Backend for Frontend é uma estratégia que visa focar na experiência do usuário, separando uma interface de backend para cada frontend. &lt;br>
+Essa estratégia pode ser implementada de forma clássica, pensando somente nos dados e formatação dos mesmos, ou pode ser implementada trazendo também para o frontend a estrutura que o mesmo deve exibir.&lt;/p>
+&lt;p>Quando o Backend começa a pensar não somente nos dados, mas também na forma de apresentação dos mesmos na tela, temos o que chamamos de Server-Driven UI.&lt;/p>
+&lt;ul>
+&lt;li>Um exemplo prático disso seria apresentar os números de telefone do usuário. Essa informação poderia ser exibida como:
+&lt;ul>
+&lt;li>uma lista vertical&lt;/li>
+&lt;li>um campo de texto único, separando os número por vírgula&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Ter essa flexibilidade de alteração na estrutura não é algo trivial. &lt;br>
+Normalmente um dos pré-requisitos é ter um Design System robusto e completo. &lt;br>
+Além disso, é fundamental também montar uma equipe plenamente capaz de construir uma biblioteca performática e consistente, que consiga gerar dinamicamente elementos na tela do celular com base na resposta do servidor.&lt;/p>
+&lt;h2 id="e-aí-quer-aprender-mais">E aí? Quer aprender mais?&lt;/h2>
+&lt;p>Gostou dos tópicos a serem abordados? &lt;em>Vem comigo!&lt;/em> &lt;br>
+Mensalmente vou trazer as novidades e recomendações de estudo sobre cada um desses temas em sua respectiva tecnologia.&lt;/p>
+&lt;p>E para não perder nenhuma das publicações, só me seguir no &lt;a href="https://www.linkedin.com/in/lucas-ramos-maciel">Linkedin&lt;/a>!&lt;/p></description></item><item><title>O perigo do Clean Code - PT1</title><link>https://www.mobilewest.com.br/pt/post/clean-code/clean-code-ugly1/</link><pubDate>Tue, 03 Aug 2021 22:05:24 -0300</pubDate><guid>https://www.mobilewest.com.br/pt/post/clean-code/clean-code-ugly1/</guid><description>
 &lt;p>Estou relendo o famoso livro Clean Code. Afinal de contas, que programador pode se dar ao luxo de não ler?&lt;br>
 E confesso que da primeira vez que li os conceitos fiquei maravilhado. Queria aplicar tudo que lia.&lt;/p>
 &lt;p>Mas como programador pragmático que sou, resolvi repensar e reaplicar um pouco desses conceitos na vida real.&lt;br>
